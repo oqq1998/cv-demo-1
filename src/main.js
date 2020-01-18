@@ -94,7 +94,7 @@ let step = () => {
             step()
         } else {
         }
-    }, 0)
+    }, 30)
 }
 step()
 
