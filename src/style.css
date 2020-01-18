@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*::after {
+    box-sizing: border-box;
+}
+  
+*::before {
+    box-sizing: border-box;
+}
+#html {
+    word-break:break-all;  
+    /*使单行文字过长时自动折行*/
+}
+
+@media(max-width:600px){
+    /* 适应手机端 */
+    #html{
+        height:60vh; 
+        /* 代码部分占屏幕总高的55% */
+        overflow:auto; 
+        /* 如果内容被修剪，则浏览器会显示滚动条以便查看其余的内容。 */
+    }
+
+    #div1Wrapper{
+        height: 40vh;
+        /* 作图区域占屏幕总高45% */
+        border: 3px solid black;
+        position: relative;
+    }
+    #div1{
+        position: relative;
+        margin-top:60vh;
+    }
+    
+}
